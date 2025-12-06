@@ -1,221 +1,207 @@
 <!doctype html>
 <html lang="uk">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>MelodyMart — інструменти та аксесуари</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Купівля музичних інструментів та аксесуарів — швидко та стильно.">
-</head>
-<body>
-  <!-- HEADER START -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">
-        <!-- simple SVG logo -->
-        <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">
-          <path d="M12 2v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <circle cx="12" cy="18" r="3" fill="currentColor" />
-        </svg>
-        <span>MelodyMart</span>
-      </a>
-
-      <nav class="main-nav" aria-label="Головна навігація">
-        <a href="#instruments">Інструменти</a>
-        <a href="#accessories">Аксесуари</a>
-        <a href="#about">Про нас</a>
-      </nav>
-
-      <div class="header-actions">
-        <button id="cartBtn" class="cart-btn" aria-label="Кошик">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M6 6h15l-1.5 9h-12z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-            <circle cx="10" cy="20" r="1" fill="currentColor"/><circle cx="18" cy="20" r="1" fill="currentColor"/>
-          </svg>
-          <span id="cartCount" class="cart-count">0</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- HERO START -->
-    <div class="hero">
-      <div class="container hero-inner">
-        <h1>Звучіть краще. Грайте з пристрастю.</h1>
-        <p>Інструменти та аксесуари для музикантів будь-якого рівня — акустика, електрика, струнні, ударні та більше.</p>
-        <a href="#instruments" class="btn-primary">Переглянути інструменти</a>
-      </div>
-    </div>
-    <!-- HERO END -->
-  </header>
-  <!-- HEADER END -->
-
-  <!-- CENTRAL COLUMN START -->
-  <main class="container">
-
-    <!-- INSTRUMENTS SECTION START -->
-    <section id="instruments" class="section">
-      <h2 class="section-title">Популярні інструменти</h2>
-      <p class="section-sub">Від акустичних гітар до синтезаторів — вибери своє звучання.</p>
-
-      <div class="grid products-grid" id="products">
-        <!-- Product cards -->
-        <article class="card" data-id="guitar-acoustic" data-name="Акустична гітара" data-price="249.00">
-          <div class="card-media">
-            <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5c3b8b49a5f41f0bb9f8b6f1f7f4ef28" alt="Акустична гітара" loading="lazy">
-            <div class="tag">Топ</div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Акустична гітара</h3>
-            <p class="card-desc">Тепле звучання, зручний гриф — чудово підходить для репетицій і виступів.</p>
-            <div class="card-footer">
-              <span class="price">€249</span>
-              <button class="btn-outline add-btn">Додати</button>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>MelodyMart — інструменти та аксесуари</title>
+      <link rel="stylesheet" href="styles.css">
+      <meta name="description" content="Купівля музичних інструментів та аксесуарів — швидко та стильно.">
+   </head>
+   <body>
+      <!-- HEADER START -->
+      <header class="site-header">
+         <div class="container header-inner">
+            <a class="logo" href="#">
+               <!-- simple SVG logo -->
+               <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">
+                  <path d="M12 2v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <circle cx="12" cy="18" r="3" fill="currentColor" />
+               </svg>
+               <span>MelodyMart</span>
+            </a>
+            <nav class="main-nav" aria-label="Головна навігація">
+               <a href="#instruments">Інструменти</a>
+               <a href="#accessories">Аксесуари</a>
+               <a href="#about">Про нас</a>
+            </nav>
+            <div class="header-actions">
+               <button id="cartBtn" class="cart-btn" aria-label="Кошик">
+                  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                     <path d="M6 6h15l-1.5 9h-12z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                     <circle cx="10" cy="20" r="1" fill="currentColor"/>
+                     <circle cx="18" cy="20" r="1" fill="currentColor"/>
+                  </svg>
+                  <span id="cartCount" class="cart-count">0</span>
+               </button>
             </div>
-          </div>
-        </article>
-
-        <article class="card" data-id="electric-guitar" data-name="Електрогітара" data-price="499.00">
-          <div class="card-media">
-            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=b8bff74b8e7b1a4f8f6b8e9c4b2c3a7c" alt="Електрогітара" loading="lazy">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Електрогітара</h3>
-            <p class="card-desc">Агресивне звучання, відмінна для рифів та соло.</p>
-            <div class="card-footer">
-              <span class="price">€499</span>
-              <button class="btn-outline add-btn">Додати</button>
+         </div>
+         <!-- HERO START -->
+         <div class="hero">
+            <div class="container hero-inner">
+               <h1>Звучіть краще. Грайте з пристрастю.</h1>
+               <p>Інструменти та аксесуари для музикантів будь-якого рівня — акустика, електрика, струнні, ударні та більше.</p>
+               <a href="#instruments" class="btn-primary">Переглянути інструменти</a>
             </div>
-          </div>
-        </article>
-
-        <article class="card" data-id="keyboard" data-name="Міні-синтезатор" data-price="179.00">
-          <div class="card-media">
-            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a6e4b1d0f2a1b6f2c5d6e9a4a3b7c9f" alt="Міні-синтезатор" loading="lazy">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Міні-синтезатор</h3>
-            <p class="card-desc">Портативний синтезатор з багатьма звуками для дому та студії.</p>
-            <div class="card-footer">
-              <span class="price">€179</span>
-              <button class="btn-outline add-btn">Додати</button>
+         </div>
+         <!-- HERO END -->
+      </header>
+      <!-- HEADER END -->
+      <!-- CENTRAL COLUMN START -->
+      <main class="container">
+         <!-- INSTRUMENTS SECTION START -->
+         <section id="instruments" class="section">
+            <h2 class="section-title">Популярні інструменти</h2>
+            <p class="section-sub">Від акустичних гітар до синтезаторів — вибери своє звучання.</p>
+            <div class="grid products-grid" id="products">
+               <!-- Product cards -->
+               <article class="card" data-id="guitar-acoustic" data-name="Акустична гітара" data-price="249.00">
+                  <div class="card-media">
+                     <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5c3b8b49a5f41f0bb9f8b6f1f7f4ef28" alt="Акустична гітара" loading="lazy">
+                     <div class="tag">Топ</div>
+                  </div>
+                  <div class="card-body">
+                     <h3 class="card-title">Акустична гітара</h3>
+                     <p class="card-desc">Тепле звучання, зручний гриф — чудово підходить для репетицій і виступів.</p>
+                     <div class="card-footer">
+                        <span class="price">€249</span>
+                        <button class="btn-outline add-btn">Додати</button>
+                     </div>
+                  </div>
+               </article>
+               <article class="card" data-id="electric-guitar" data-name="Електрогітара" data-price="499.00">
+                  <div class="card-media">
+                     <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=b8bff74b8e7b1a4f8f6b8e9c4b2c3a7c" alt="Електрогітара" loading="lazy">
+                  </div>
+                  <div class="card-body">
+                     <h3 class="card-title">Електрогітара</h3>
+                     <p class="card-desc">Агресивне звучання, відмінна для рифів та соло.</p>
+                     <div class="card-footer">
+                        <span class="price">€499</span>
+                        <button class="btn-outline add-btn">Додати</button>
+                     </div>
+                  </div>
+               </article>
+               <article class="card" data-id="keyboard" data-name="Міні-синтезатор" data-price="179.00">
+                  <div class="card-media">
+                     <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a6e4b1d0f2a1b6f2c5d6e9a4a3b7c9f" alt="Міні-синтезатор" loading="lazy">
+                  </div>
+                  <div class="card-body">
+                     <h3 class="card-title">Міні-синтезатор</h3>
+                     <p class="card-desc">Портативний синтезатор з багатьма звуками для дому та студії.</p>
+                     <div class="card-footer">
+                        <span class="price">€179</span>
+                        <button class="btn-outline add-btn">Додати</button>
+                     </div>
+                  </div>
+               </article>
             </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- INSTRUMENTS SECTION END -->
-
-    <!-- ACCESSORIES SECTION START -->
-    <section id="accessories" class="section">
-      <h2 class="section-title">Аксесуари</h2>
-      <div class="grid accessories-grid">
-        <article class="mini-card" data-id="strings" data-name="Набір струн" data-price="9.50">
-          <img src="https://images.unsplash.com/photo-1516822003754-cca485356ecb?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=2f4b8f0f3ca3a2b2ef4c0c1d2b3a4d5e" alt="Струни" loading="lazy">
-          <div>
-            <h3>Набір струн</h3>
-            <div class="price-mini">€9.50</div>
-            <button class="btn-small add-btn">+</button>
-          </div>
-        </article>
-
-        <article class="mini-card" data-id="capo" data-name="Каподастр" data-price="12.00">
-          <img src="https://images.unsplash.com/photo-1516685304081-de7947d419d6?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=6a9e6b7f3b6f4c2d5a9f8b7c1d2e3f4a" alt="Каподастр" loading="lazy">
-          <div>
-            <h4>Каподастр</h4>
-            <div class="price-mini">€12.00</div>
-            <button class="btn-small add-btn">+</button>
-          </div>
-        </article>
-
-        <article class="mini-card" data-id="tuner" data-name="Тюнер" data-price="19.90">
-          <img src="https://images.unsplash.com/photo-1508896694512-7a58ea3c0f7d?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=66d7a8b1c3d8f4e5a6b8f9c0d1e2b3c4" alt="Тюнер" loading="lazy">
-          <div>
-            <h5>Хроматичний тюнер</h5>
-            <div class="price-mini">€19.90</div>
-            <button class="btn-small add-btn">+</button>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- ACCESSORIES SECTION END -->
-
-    <!-- ABOUT SECTION START -->
-    <section id="about" class="section about">
-      <h2 class="section-title">Про нас</h2>
-      <p>MelodyMart — невеликий магазин для музикантів, який цінує якість та стиль. Безкоштовна доставка від €300, гарантія повернення 14 днів.</p>
-      <div class="cta-row">
-        <a href="#" class="btn-secondary">Контакти</a>
-        <a href="#" class="btn-outline">Умови доставки</a>
-      </div>
-    </section>
-    <!-- ABOUT SECTION END -->
-
-  </main>
-  <!-- CENTRAL COLUMN END -->
-
-  <!-- FOOTER START -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>MelodyMart</strong>
-        <p>© <span id="year"></span> Усі права захищено</p>
-      </div>
-      <div class="socials" aria-hidden="true">
-        <a href="#" title="Instagram">IG</a>
-        <a href="#" title="Facebook">FB</a>
-        <a href="#" title="YouTube">YT</a>
-      </div>
-    </div>
-  </footer>
-  <!-- FOOTER END -->
-
-  <!-- Minimal JS for demo cart (no backend) -->
-  <script>
-    (function(){
-      const addButtons = document.querySelectorAll('.add-btn');
-      const cartCountEl = document.getElementById('cartCount');
-      const cartBtn = document.getElementById('cartBtn');
-      const yearEl = document.getElementById('year');
-      yearEl.textContent = new Date().getFullYear();
-
-      let cart = {}; // id => {name, price, qty}
-
-      function updateCartUI(){
-        const totalItems = Object.values(cart).reduce((s,p)=>s+p.qty,0);
-        cartCountEl.textContent = totalItems;
-        cartBtn.animate([{transform:'scale(1)'},{transform:'scale(1.08)'},{transform:'scale(1)'}],{duration:250});
-      }
-
-      addButtons.forEach(btn=>{
-        btn.addEventListener('click', (e)=>{
-          const card = e.target.closest('[data-id]');
-          const id = card.dataset.id;
-          const name = card.dataset.name;
-          const price = parseFloat(card.dataset.price);
-          if (!cart[id]) cart[id] = {name, price, qty:0};
-          cart[id].qty += 1;
-          updateCartUI();
-        });
-      });
-
-      cartBtn.addEventListener('click', ()=>{
-        const items = Object.values(cart);
-        if (items.length===0) {
-          alert('Кошик порожній.');
-          return;
-        }
-        let msg = 'Ваш кошик:\n\n';
-        let total = 0;
-        items.forEach(i=>{
-          msg += `${i.name} × ${i.qty} — €${(i.price*i.qty).toFixed(2)}\n`;
-          total += i.price*i.qty;
-        });
-        msg += `\nЗагалом: €${total.toFixed(2)}\n\n`;
-        alert(msg);
-      });
-    })();
-  </script>
-</body>
+         </section>
+         <!-- INSTRUMENTS SECTION END -->
+         <!-- ACCESSORIES SECTION START -->
+         <section id="accessories" class="section">
+            <h2 class="section-title">Аксесуари</h2>
+            <div class="grid accessories-grid">
+               <article class="mini-card" data-id="strings" data-name="Набір струн" data-price="9.50">
+                  <img src="https://images.unsplash.com/photo-1516822003754-cca485356ecb?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=2f4b8f0f3ca3a2b2ef4c0c1d2b3a4d5e" alt="Струни" loading="lazy">
+                  <div>
+                     <h3>Набір струн</h3>
+                     <div class="price-mini">€9.50</div>
+                     <button class="btn-small add-btn">+</button>
+                  </div>
+               </article>
+               <article class="mini-card" data-id="capo" data-name="Каподастр" data-price="12.00">
+                  <img src="https://images.unsplash.com/photo-1516685304081-de7947d419d6?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=6a9e6b7f3b6f4c2d5a9f8b7c1d2e3f4a" alt="Каподастр" loading="lazy">
+                  <div>
+                     <h4>Каподастр</h4>
+                     <div class="price-mini">€12.00</div>
+                     <button class="btn-small add-btn">+</button>
+                  </div>
+               </article>
+               <article class="mini-card" data-id="tuner" data-name="Тюнер" data-price="19.90">
+                  <img src="https://images.unsplash.com/photo-1508896694512-7a58ea3c0f7d?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=66d7a8b1c3d8f4e5a6b8f9c0d1e2b3c4" alt="Тюнер" loading="lazy">
+                  <div>
+                     <h5>Хроматичний тюнер</h5>
+                     <div class="price-mini">€19.90</div>
+                     <button class="btn-small add-btn">+</button>
+                  </div>
+               </article>
+            </div>
+         </section>
+         <!-- ACCESSORIES SECTION END -->
+         <!-- ABOUT SECTION START -->
+         <section id="about" class="section about">
+            <h2 class="section-title">Про нас</h2>
+            <p>MelodyMart — невеликий магазин для музикантів, який цінує якість та стиль. Безкоштовна доставка від €300, гарантія повернення 14 днів.</p>
+            <div class="cta-row">
+               <a href="#" class="btn-secondary">Контакти</a>
+               <a href="#" class="btn-outline">Умови доставки</a>
+            </div>
+         </section>
+         <!-- ABOUT SECTION END -->
+      </main>
+      <!-- CENTRAL COLUMN END -->
+      <!-- FOOTER START -->
+      <footer class="site-footer">
+         <div class="container footer-inner">
+            <div>
+               <strong>MelodyMart</strong>
+               <p>© <span id="year"></span> Усі права захищено</p>
+            </div>
+            <div class="socials" aria-hidden="true">
+               <a href="#" title="Instagram">IG</a>
+               <a href="#" title="Facebook">FB</a>
+               <a href="#" title="YouTube">YT</a>
+            </div>
+         </div>
+      </footer>
+      <!-- FOOTER END -->
+      <!-- Minimal JS for demo cart (no backend) -->
+      <script>
+         (function(){
+           const addButtons = document.querySelectorAll('.add-btn');
+           const cartCountEl = document.getElementById('cartCount');
+           const cartBtn = document.getElementById('cartBtn');
+           const yearEl = document.getElementById('year');
+           yearEl.textContent = new Date().getFullYear();
+         
+           let cart = {}; // id => {name, price, qty}
+         
+           function updateCartUI(){
+             const totalItems = Object.values(cart).reduce((s,p)=>s+p.qty,0);
+             cartCountEl.textContent = totalItems;
+             cartBtn.animate([{transform:'scale(1)'},{transform:'scale(1.08)'},{transform:'scale(1)'}],{duration:250});
+           }
+         
+           addButtons.forEach(btn=>{
+             btn.addEventListener('click', (e)=>{
+               const card = e.target.closest('[data-id]');
+               const id = card.dataset.id;
+               const name = card.dataset.name;
+               const price = parseFloat(card.dataset.price);
+               if (!cart[id]) cart[id] = {name, price, qty:0};
+               cart[id].qty += 1;
+               updateCartUI();
+             });
+           });
+         
+           cartBtn.addEventListener('click', ()=>{
+             const items = Object.values(cart);
+             if (items.length===0) {
+               alert('Кошик порожній.');
+               return;
+             }
+             let msg = 'Ваш кошик:\n\n';
+             let total = 0;
+             items.forEach(i=>{
+               msg += `${i.name} × ${i.qty} — €${(i.price*i.qty).toFixed(2)}\n`;
+               total += i.price*i.qty;
+             });
+             msg += `\nЗагалом: €${total.toFixed(2)}\n\n`;
+             alert(msg);
+           });
+         })();
+      </script>
+   </body>
 </html>
 
 
